@@ -36,6 +36,8 @@ Great! Now you have access to your Terminal’s prompt. At this point you can ru
 
 **Core Commands**
 
+| Command | Description|
+|---------|-------------|
 | cd | Home directory |
 | cd [folder] | Change directory |
 | cd ~ | Home directory, e.g. 'cd ~/folder/' |
@@ -56,6 +58,8 @@ Great! Now you have access to your Terminal’s prompt. At this point you can ru
 
 **File Management**
 
+| Command | Description|
+|---------|-------------|
 | touch [file] | Create new file |
 | pwd | Full path to working directory |
 | .. | Parent/enclosing directory, e.g. |
@@ -74,6 +78,8 @@ Great! Now you have access to your Terminal’s prompt. At this point you can ru
 
 **Directory Management**
 
+| Command | Description|
+|---------|-------------|
 | mkdir [dir] | Create new directory |
 | mkdir -p [dir]/[dir] | Create nested directories |
 | rmdir [dir] | Remove directory ( only operates on empty directories ) |
