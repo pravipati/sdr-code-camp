@@ -297,12 +297,27 @@ Try playing with the background property of the different sections of your HTML 
 
 With your new site built, it's time to show it to the rest of the world. As you continue to add more content and information to your site, you probably won't want to have to manually upload it to a host each time. This is where Travis can help.
 
-Travis is is a CI/CD (continuous integration / continuous deployment) tool which we're going to use to deploy our code to GitHub Pages. W
+Travis is is a CI/CD (continuous integration / continuous deployment) tool which we're going to use to deploy our code to GitHub Pages.
+
+First, sign up for Travis w/ GitHub here: https://travis-ci.org/
+
+Follow the instructions here, ignoring the part about creating a `.travis.yml` file (it's already been done for you!).
+
+Next, we'll need to create a Personal Access Token. Follow this guide to do that: https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/
+
+_Note_: be sure to scope the token to **only** the `public_repo` scope. 
+
+Next, we'll need to add the token to our repository settings page (in Travis): https://docs.travis-ci.com/user/environment-variables#Defining-Variables-in-Repository-Settings
 
 https://docs.travis-ci.com/user/deployment/pages/
 
-### Deploying it to a GitHub Page
+Finally, (since we haven't saved any of our work so far), run the following commands:
 
+`git add .`
+`git commit -m 'Initial Commit'`
+`git push origin master`
+
+This should trigger a build in Travis and deploy it to your GitHub Page!
 
 ### Extra for Experts
 
