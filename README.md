@@ -98,3 +98,151 @@ Next, you’ll need to run the `git clone` command and paste the link as such:
 ![](images/cloneterminal.png)
 
 You should now have a folder titled `sdr-code-camp` on your Desktop. You could find it on your Desktop via your GUI but since we’re already in the CLI…try running `ls`. Depending on what’s in `~/Desktop` you may see several different things or you may just have the `sdr-code-camp` folder. If you have a lot of stuff on your Desktop (we’ve all been there) try running `ls | grep sdr`. Now you should be able to see that the `sdr-code-camp` folder does in fact live on your Desktop. For the curious: run `man grep` and ask me what `|` does.
+
+### Opening your code in Atom
+
+Now that our code is in place (on our desktops) we can begin to interact with it and modify the existing codebase. In theory we just could use Notepad or any plain ol' text editor...so why bother with learning an entire new text editor? Well, the reasons are: 1) it's fun! 2) as you grow your skill level in programming, you'll find that any good text editor includes tools to help a developer with their day-to-day programming tasks. That's why text editors built for programmers are commonly known as _Integrated Development Environments_. It's also one of the reasons that choosing an IDE is such a personal event. 
+
+Make sure that you're in the root directory for `sdr-code-camp` and run `atom .`. You should see:
+
+![](images/atom.png)
+
+Use the menu on the left hand side to navigate around different files. The first file we're working with is the `index.html` file inside of the `site1` folder. Click on that file and you'll notice one of the first benefits of using an IDE: syntax highlighting. Atom is smart enough to recognize the language that you're programming in and highlights its syntax to make reading and checking for syntax errors a little bit easier. 
+
+_Why `index.html`?_: this is just a convention—historically the root website that you want to show people is titled `index.html`
+
+### What you're going to build
+
+You can really experiment with that you build for your website. Inside of the codebase, you'll find a template for adding information about 3 of your top targets, as well as some areas where you can add your strategy for how you will approach those top targets. Here's what it looks like at first:
+
+![](images/website1.png)
+
+While the template already has a structure in place, feel free to add or subtract more detail by adding or subtracting more HTML elements. Here's a cheat sheet of other elements you can add, but remember, Google is also your friend. 
+
+**HTML**
+
+> Challenge: try adding a list, whether that is an <ol> or <ul> 
+
+### Headings
+```html
+<h1>Main heading</h1>
+<!-- etc -->
+<h6>Level-6 heading</h6>
+```
+
+tag | element
+--- | ---
+**h1** | main heading
+**h6** | least important heading
+
+### Paragraphs
+```html
+<p>Paragraph.<br/>
+Other line.</p>
+<p>Other paragraph.</p>
+<hr/>
+<p>See the line above.</p>
+```
+
+tag | element
+--- | ---
+**p** | paragraph
+**br** | line break
+**hr** | horizontal line
+
+### Formatting
+```html
+<em>Formatting</em> is <strong>important</strong> !
+(a+b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab
+```
+
+tag | element
+--- | ---
+**sub** | subscript
+**sup** | superscript
+**em** | emphasize
+**strong** | important
+**mark** | highlighted
+**small** | small
+**i** | italic
+**b** | bold
+
+### Links
+```html
+<a href="url">link</a>
+<a href="url" target=_blank>open in a new window</a>
+
+<a href="#comments">watch comments</a>
+<h2 id="comments">comments</h2>
+```
+
+tag | element
+--- | ---
+**a** | hyperlink
+
+### Images
+```html
+<img src="image.png" alt="description" width="300" height="200" />
+```
+
+tag | element
+--- | ---
+**img** | image
+
+### Blocks
+```html
+<div>block</div>
+<span>inline</span>
+```
+
+tag | element
+--- | ---
+**div** | block-level element
+**span** | inline element
+
+
+## Lists
+
+### Unordered list
+```html
+<ul>
+    <li>item</li>
+    <li>item</li>
+    <li>item</li>
+</ul>
+```
+
+tag | element
+--- | ---
+**ul** | unordered list
+**li** | list item
+
+### Ordered list
+```html
+<ol>
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+</ol>
+```
+
+tag | element
+--- | ---
+**ol** | ordered list
+**li** | list item
+
+
+### Making it all look good :sunglasses:
+
+### Build it with Travis
+
+With your new site built, it's time to show it to the rest of the world. Let's imagine that this site is something that you've built 
+https://docs.travis-ci.com/user/deployment/pages/
+
+### Deploying it to a GitHub Page
+
+
+### Copy the format of the following Google Sheet
+
+
+### Extra for Experts
