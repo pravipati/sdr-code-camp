@@ -81,4 +81,16 @@ Great! Now you have access to your Terminal’s prompt. At this point you can ru
 
 Got all that? Great! Let’s build something now.
 
-Type in `cd ~/Desktop`. This will take you to 
+Type in `cd ~/Desktop`. This will take you to the Desktop of your computer. If you type in `ls` you can get of everything on your Desktop (if there is anything there). 
+
+Now that we’re there, let’s go ahead and clone the repository we forked locally to our computer. Go to the repository you forked in GitHub and click on the “Clone or Download” button to grab the clone link. _Note_: be sure that you click on “Use HTTPS”.
+
+![](images/clone.png)
+
+Next, you’ll need to run the `git clone` command and paste the link as such:
+
+![](images/cloneterminal.png)
+
+You should now have a folder titled `sdr-code-camp` on your Desktop. You could find it on your Desktop via your GUI but since we’re already in the CLI…try running `ls`. Depending on what’s in `~/Desktop` you may see several different things or you may just have the `sdr-code-camp` folder. If you have a lot of stuff on your Desktop (we’ve all been there) try running `ls | grep sdr`. Now you should be able to see that the `sdr-code-camp` folder does in fact live on your Desktop. For the curious: run `man grep` and ask me what `|` does.
+
+
