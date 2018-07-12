@@ -36,6 +36,8 @@ Great! Now you have access to your Terminal’s prompt. At this point you can ru
 
 **Core Commands**
 
+| Command | Description|
+|---------|-------------|
 | cd | Home directory |
 | cd [folder] | Change directory |
 | cd ~ | Home directory, e.g. 'cd ~/folder/' |
@@ -56,6 +58,8 @@ Great! Now you have access to your Terminal’s prompt. At this point you can ru
 
 **File Management**
 
+| Command | Description|
+|---------|-------------|
 | touch [file] | Create new file |
 | pwd | Full path to working directory |
 | .. | Parent/enclosing directory, e.g. |
@@ -74,6 +78,8 @@ Great! Now you have access to your Terminal’s prompt. At this point you can ru
 
 **Directory Management**
 
+| Command | Description|
+|---------|-------------|
 | mkdir [dir] | Create new directory |
 | mkdir -p [dir]/[dir] | Create nested directories |
 | rmdir [dir] | Remove directory ( only operates on empty directories ) |
@@ -92,5 +98,3 @@ Next, you’ll need to run the `git clone` command and paste the link as such:
 ![](images/cloneterminal.png)
 
 You should now have a folder titled `sdr-code-camp` on your Desktop. You could find it on your Desktop via your GUI but since we’re already in the CLI…try running `ls`. Depending on what’s in `~/Desktop` you may see several different things or you may just have the `sdr-code-camp` folder. If you have a lot of stuff on your Desktop (we’ve all been there) try running `ls | grep sdr`. Now you should be able to see that the `sdr-code-camp` folder does in fact live on your Desktop. For the curious: run `man grep` and ask me what `|` does.
-
-
