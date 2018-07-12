@@ -119,11 +119,16 @@ You can really experiment with that you build for your website. Inside of the co
 
 While the template already has a structure in place, feel free to add or subtract more detail by adding or subtracting more HTML elements. Here's a cheat sheet of other elements you can add, but remember, Google is also your friend. 
 
-**HTML**
+> Peeling the Onion: what exactly is HTML? HTML is more of a markup language that you can use to describe the structure of a "web document", or a page that you'd like to share over the web, to someone who is using a browser or other html-reader to view your document. For more information, check out the [HTML wiki page](https://en.wikipedia.org/wiki/HTML)
 
-> Challenge: try adding a list, whether that is an <ol> or <ul> 
+When you're at a point where you'd like to see what your website looks like, go back to your terminal and type `open -a 'Google Chrome' site1/index.html`. As you make changes to your index.html page, you can just refresh your Chrome browser to see the updates in real time. 
 
-### Headings
+
+### HTML Cheat Sheet
+
+> Challenge: try adding a list, whether that is an `<ol>` or `<ul>` 
+
+#### Headings
 ```html
 <h1>Main heading</h1>
 <!-- etc -->
@@ -135,7 +140,7 @@ tag | element
 **h1** | main heading
 **h6** | least important heading
 
-### Paragraphs
+#### Paragraphs
 ```html
 <p>Paragraph.<br/>
 Other line.</p>
@@ -150,7 +155,7 @@ tag | element
 **br** | line break
 **hr** | horizontal line
 
-### Formatting
+#### Formatting
 ```html
 <em>Formatting</em> is <strong>important</strong> !
 (a+b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab
@@ -167,7 +172,7 @@ tag | element
 **i** | italic
 **b** | bold
 
-### Links
+#### Links
 ```html
 <a href="url">link</a>
 <a href="url" target=_blank>open in a new window</a>
@@ -180,7 +185,7 @@ tag | element
 --- | ---
 **a** | hyperlink
 
-### Images
+#### Images
 ```html
 <img src="image.png" alt="description" width="300" height="200" />
 ```
@@ -189,7 +194,7 @@ tag | element
 --- | ---
 **img** | image
 
-### Blocks
+#### Blocks
 ```html
 <div>block</div>
 <span>inline</span>
@@ -201,9 +206,7 @@ tag | element
 **span** | inline element
 
 
-## Lists
-
-### Unordered list
+#### Unordered list
 ```html
 <ul>
     <li>item</li>
@@ -217,7 +220,7 @@ tag | element
 **ul** | unordered list
 **li** | list item
 
-### Ordered list
+#### Ordered list
 ```html
 <ol>
     <li>first</li>
@@ -234,15 +237,75 @@ tag | element
 
 ### Making it all look good :sunglasses:
 
+Hopefully you're happy with the structure of your site at this point. Now we can have some fun with styling it. The way that we're going to style our page is by using CSS. 
+
+**Definition**: Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
+
+In atom, click into the `site2` folder and open up the `index.html` file there. Notice that there are a few new elements including `<head>`, `<body>`, and `<style>`. For now the `<style>` tag is the one we will focus on. You'll also notice that there is the following within the `<style>` tags:
+
+```
+  * {
+      /*these properties affect every element on your page*/
+    }
+
+    h3 {
+
+    }
+
+    p {
+
+    }
+
+    div {
+
+    }
+```
+
+This is what the CSS language looks like. Each pair of an element and the curly brackets is what is known as a CSS rule-set. CSS rule-sets consists of a selector and a declaration block: The selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons. Each declaration includes a CSS property name and a value, separated by a colon.
+
+![](images/ruleset.png)
+
+First things first, let's get rid of `Times New Roman` and use something a little more modern. While I'm at it, I'd like the title of my page to a different color. I'm a a big fan of `Arial` and Red—here's how we would set that up:
+
+```
+  * {
+      /*these properties affect every element on your page*/
+      font-family: Arial;
+    }
+
+    h3 {
+      color: red;
+    }
+
+    p {
+
+    }
+
+    div {
+
+    }
+```
+
+![](images/voila.png)
+
+_Voila!_ look at that, we've just added some style to our page. 
+
+Try playing with the background property of the different sections of your HTML page. Here's a little demo of how that works: [MSDN background property](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
+
+
 ### Build it with Travis
 
 With your new site built, it's time to show it to the rest of the world. Let's imagine that this site is something that you've built 
+
 https://docs.travis-ci.com/user/deployment/pages/
 
 ### Deploying it to a GitHub Page
 
 
-### Copy the format of the following Google Sheet
-
-
 ### Extra for Experts
+
+You made it this far :sparkles:! Let's venture a little further. Open up `site3/index.html` in Atom and give this tutorial a try:
+
+[MSDN — First Splash into JS](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash)
+
+Definitely raise your :hand: if you get this far and I'll come and help you get started. 
