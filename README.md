@@ -293,7 +293,7 @@ _Voila!_ look at that, we've just added some style to our page.
 Try playing with the background property of the different sections of your HTML page. Here's a little demo of how that works: [MSDN background property](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
 
 
-### Build it with Travis
+~~### Build it with Travis~~
 
 With your new site built, it's time to show it to the rest of the world. As you continue to add more content and information to your site, you probably won't want to have to manually upload it to a host each time. This is where Travis can help.
 
