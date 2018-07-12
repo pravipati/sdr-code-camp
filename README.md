@@ -295,7 +295,9 @@ Try playing with the background property of the different sections of your HTML 
 
 ### Build it with Travis
 
-With your new site built, it's time to show it to the rest of the world. Let's imagine that this site is something that you've built 
+With your new site built, it's time to show it to the rest of the world. As you continue to add more content and information to your site, you probably won't want to have to manually upload it to a host each time. This is where Travis can help.
+
+Travis is is a CI/CD (continuous integration / continuous deployment) tool which we're going to use to deploy our code to GitHub Pages. W
 
 https://docs.travis-ci.com/user/deployment/pages/
 
